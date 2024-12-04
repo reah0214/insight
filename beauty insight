@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>insight</title>
+  <style>
+      /* 기본 스타일 */
+      html, body {
+          height: 100%; /* body와 html의 높이를 100%로 설정 */
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          background-image: url('-serum/-ho/ho/good'); /* 첫 번째 배경화면 */
+          background-size: cover; 
+          background-repeat: no-repeat;
+          background-position:center;
+   
+          background-attachment:fixed;
+
+          position: relative; /* 배경 레이어 위에 요소 배치를 위한 설정 */
+      }
+
+      body::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50%; /* 화면 전체 너비 */
+          height: 100vh; /* 화면 전체 높이 */
+          background-image: url('-serum/-ho/ho/black'); /* 두 번째 배경화면 */
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0.6; /* 투명도 설정 */
+          z-index: -1; /* 본문 콘텐츠 뒤로 배치 */
+      }
+
+      a {
+          color: #4F938B;   
+          font-family: "Gasoek One", sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          font-style: italic;
+          position: absolute; /* 절대 위치로 설정하여 자유롭게 배치 */
+          text-decoration: none;
+      }
+
+      /* 각 링크에 대해 위치 조정 */
+      a[href="http://localhost:9898/Local/-serum/serum?449D9919-00C1-476F-B700-58F74EB94DA5"] {
+          top: 270px; /* 세럼 링크의 수직 위치 */
+          left: 72%;
+      }
+
+      a[href="http://localhost:9898/Local/-serum/cream?F0A594B1-24A8-4A6A-A0FB-811790BA996B"]:nth-of-type(2) {
+          top: 360px; /* 크림 링크의 수직 위치 */
+          left: 72%;
+      }
+
+      a[href="https://www.naver.com"]:nth-of-type(3) {
+          top: 450px; /* 선크림 링크의 수직 위치 */
+          left: 71.5%; /* 선크림 위치 미세 조정 */
+      }
+
+      a:active, a:focus, a:visited {
+          color: #4F938b;
+          font-style: oblique;
+          text-decoration: none;
+      }
+
+      h4, h5 {
+          margin: 0;
+      }
+
+      h4, a { 
+          margin: 0;
+      }
+
+      h4 {
+          font-family: "PT Serif", serif;
+          font-size: 50px;
+          font-weight: 100000;
+          font-style: oblique;
+          color: #6AD0C6;
+      }
+
+      h5 { 
+          font-family: "Gowun Dodum", sans-serif;
+          font-size: 20px;
+          font-weight: 450;
+          color: #53A09A;
+          margin-left: 5%;
+          margin-top: 12px;
+          display: block;
+          font-style: oblique;
+      }
+
+      h3 {
+          color: #58A59F;
+          font-size: 25px;
+          font-style: oblique;
+          position: relative;
+          margin-left: 60%;
+      }
+  </style>
+</head>
+
+<body> 
+    <br><br><br><br><br><br><br> 
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;category&gt;</h3><br><br><br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beauty insight</h4><br>
+    <a href="http://localhost:9898/Local/-serum/serum?449D9919-00C1-476F-B700-58F74EB94DA5">세럼</a>
+    <h5>피부를 위한 똑똑한 선택, Beauty insight에서 시작됩니다</h5><br>
+
+    <a href="http://localhost:9898/Local/-serum/cream?F0A594B1-24A8-4A6A-A0FB-811790BA996B">크림</a><br><br><br><br><br>
+    <a href="https://www.naver.com">선크림</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
